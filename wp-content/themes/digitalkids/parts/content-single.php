@@ -11,11 +11,7 @@
 		<?php if($author = get_the_author()) { ?>
 			<h6 class="post-author"><?php _e('An article by ', 'wanderer'); echo $author; ?></h6>
 		<?php } ?>
-		<?php if( has_post_thumbnail() ) {
-			the_title( '<h1 id="title" class="entry-title-animate">', '</h1>' ); 
-		} else {
-			the_title( '<h1 id="title" class="entry-title">', '</h1>' ); 
-		} ?>
+		
 		<?php if($subTitle = get_post_meta( get_the_ID(), 'wanderer_sub_title', true )) : ?>
             <h2 class="entry-subtitle"><?php echo sanitize_text_field($subTitle); ?></h2>
         <?php endif; ?>
