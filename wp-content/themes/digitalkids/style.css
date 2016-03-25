@@ -2113,6 +2113,9 @@ footer {
   transition: 0 0.55s ease-in-out 0s;
 }
 
+/* Mediaqueries
+----------------------------------------------- */
+
 @media (min-width: 700px) {
   .ie9 :checked ~ .page-wrap .page-wrap-inner {
     margin-left: -47%;
