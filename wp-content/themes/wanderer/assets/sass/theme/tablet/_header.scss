@@ -1,0 +1,76 @@
+
+/* Header
+----------------------------------------------- */
+
+.header-top {
+	padding: 4% 0;
+}
+.logo {
+	position: absolute;
+	top: 50%;
+	left: 20px;
+	height: auto;
+	transform: translateY(-50%);
+}
+.site-title {
+	margin: 0;
+	@include font-size(3.6);
+}
+.site-description {
+	@include font-size(0.9);
+	margin: 0;
+}
+.featured-content {
+	margin-left: -350px;
+	max-width: 700px;
+}
+.featured-title {
+	margin: 15px 0;
+	@include font-size(6);
+}
+.featured-subtitle {
+	font-weight: 300;
+	margin: 15px 0;
+	@include font-size(2.5);
+}
+.featured-date {
+	color: white;
+	@include font-size(1.5);
+	&::before {
+		border-top: 1px solid white;
+		content: "";
+		height: 1px;
+		position: absolute;
+		top: 10px; left: 0;
+		width: 280px;
+	}
+	&::after {
+		border-top: 1px solid white;
+		content: "";
+		height: 1px;
+		position: absolute;
+		top: 10px; right: 0;
+		width: 280px;
+	}
+}
+.menu-icon-container {
+	top: 50%; right: 40px;
+}
+.menu-global {
+	border-top: 4px solid white;
+	width: 100%;
+}
+.menu-top {
+	top: 0;
+}
+.menu-middle {
+	top: 14px;
+}
+.menu-bottom {
+	top: 28px;
+}
+.icon-arrow-down {
+	height: 40px;
+	top: 20px;
+	width: 40px;
+}

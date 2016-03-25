@@ -1,0 +1,38 @@
+
+
+/* Icons
+----------------------------------------------- */
+
+.icon {
+	height: 35px;
+	padding: 3px;
+	width: 35px;
+}
+.icon-facebook,
+.icon-twitter,
+.icon-linkedin,
+.icon-instagram,
+.icon-pinterest {
+	fill: $light-gray;
+	transition: all 0.75s ease-in-out;
+	&:hover {
+		fill: white;
+		transition: all 0.75s ease-in-out;
+	}
+}
+.icon-arrow-down {
+	fill: white;
+	height: 30px;
+	position: relative;
+	top: 5px;
+	width: 30px;
+}
+.share {
+	fill: $light-gray;
+	height: 35px;
+	padding: 3px;
+	width: 35px;
+	&:hover {
+		fill: $dark-gray;
+	}
+}

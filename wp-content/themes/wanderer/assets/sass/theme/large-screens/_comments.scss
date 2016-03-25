@@ -1,0 +1,26 @@
+
+/* Comments
+----------------------------------------------- */
+
+.comments-area {
+	margin: 60px auto;
+	padding: 0;
+	width: 900px;
+}
+.comments-title {
+	margin: 20px 0 80px;
+	@include font-size(3);
+}
+.comment-entry {
+	padding-left: 40px;
+	width: 600px;
+}
+.comment-author {
+	@include font-size(2.5);
+}
+.comment-date {
+	@include font-size(1.6);
+}
+.comment-respond {
+	width: 530px;
+}

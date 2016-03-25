@@ -1,0 +1,41 @@
+
+/* Basic Setup
+----------------------------------------------- */
+html {
+  font-size: 62.5%; /* Sets up the Base 10 stuff */
+}
+body {
+	animation: bugfix infinite 1s;
+  font-family: 'Open Sans', sans-serif;
+	background: white;
+}
+
+/* Fixed android bug on sidebar toggle | Applied to body */
+
+@-webkit-keyframes bugfix {
+  from { padding: 0; }
+  to { padding: 0; }
+}
+@-moz-keyframes bugfix {
+  from { padding: 0; }
+  to { padding: 0; }
+}
+@-ms-keyframes bugfix {
+  from { padding: 0; }
+  to { padding: 0; }
+}
+@keyframes bugfix {
+  from { padding: 0; }
+  to { padding: 0; }
+}
+
+/* some base styles */
+
+.main-content {
+  padding-bottom: 80px;
+}
+.attachment-meta {
+  display: block;
+  padding: 10px 0;
+  @include font-size(1.5);
+}

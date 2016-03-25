@@ -1,0 +1,11 @@
+
+/* Sidebar
+----------------------------------------------- */
+
+.aside-container {
+	right: -25%;
+	width: 25%;
+}
+:checked ~ .page-wrap .page-wrap-inner {
+	margin-left: -25%;
+}

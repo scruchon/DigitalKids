@@ -1,0 +1,297 @@
+
+/* Blog
+----------------------------------------------- */
+
+.entry-header {
+	padding: 40px 20px 15px;
+	text-align: center;
+}
+.entry-title {
+	color: $light-gray;
+	line-height: 1.1;
+	margin: 0;
+	transition: all 0.75s ease-in-out;
+	word-wrap: break-word;
+	a {
+		color: $light-gray;
+	}
+}
+.entry-title-index {
+	@extend .entry-title;
+	margin: 0;
+	@include font-size(2.6);
+	a {
+		color: $light-gray;
+	}
+}
+.entry-title-animate {
+	color: $light-gray;
+	margin: 0;
+	transition: all 0.75s ease-in-out;
+}
+.js-entry-title {
+	margin: 0;
+	position: relative;
+	opacity: 1;
+	transition: all 0.75s ease-in-out;
+}
+.entry-title-hover {
+	transition: all 0.55s ease-in-out;
+}
+.entry-subtitle {
+	color: $light-gray;
+	font-weight: 300;
+	margin: 10px 0;
+	position: relative;
+	word-wrap: break-word;
+}
+.entry-subtitle-index {
+	color: $light-gray;
+	font-weight: 300;
+	margin: 6px 0;
+	@include font-size(1.4);
+}
+.entry-content {
+	padding: 10px 20px;
+	position: relative;
+	top: 0; left: 0;
+	width: 100%;
+	word-wrap: break-word;
+	z-index: 200;
+	&::after {
+		@include clearfix;
+	}
+	img {
+		width: 100%;
+		max-width: 100%;
+	}
+}
+.entry-index {
+	background: fixed;
+	background-size: cover;
+	background-position: center center;
+	border-bottom: 1px solid $smoke;
+	margin: 0 auto;
+	padding: 30px 20px;
+	position: relative;
+	text-align: center;
+	width: 100%;
+	&::before {
+		background: black;
+		content: "";
+		opacity: 0.6;
+		position: absolute;
+		top: 0; right: 0; bottom: 0; left: 0;
+		width: 100%;
+		z-index: 50;
+		transition: all 0.55s ease-in-out;
+	}
+	&::after {
+		background: white;
+		content: "";
+		opacity: 1;
+		position: absolute;
+		top: 0; right: 0; bottom: 0; left: 0;
+		width: 100%;
+		z-index: 100;
+		transition: all 0.55s ease-in-out;
+	}
+	&:hover::after {
+		opacity: 1;
+		transition: all 0.55s ease-in-out;
+	}
+}
+.entry-index:hover .entry-title-hover > a {
+	transition: all 0.55s ease-in-out;
+}
+.entry-footer {
+	padding: 10px 20px;
+	text-align: center;
+	@include font-size(1.4);
+}
+.post-author {
+	padding-bottom: 20px;
+	position: relative;
+	&::after {
+		border-bottom: 3px solid $light-gray;
+		content: "";
+		height: 5px;
+		margin-left: -100px;
+		position: absolute;
+		bottom: 5px; left: 50%;
+		width: 200px;
+	}
+}
+.post-date {
+	color: $light-gray;
+	display: block;
+	margin-bottom: 5px;
+	position: relative;
+	@include font-size(1.2);
+}
+
+/* more posts */
+
+.more-posts {
+	margin: 0;
+	padding: 5px 0 0;
+	text-align: center;
+}
+.more-posts-title {
+	background: $dark-gray;
+	color: $light-gray;
+	margin: 0;
+	padding: 30px 0;
+	text-transform: uppercase;
+}
+.item {
+	background: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	height: 450px;
+	position: relative;
+	&::after {
+		background: rgba($dark-gray, 0.6);
+		content: "";
+		height: 100%;
+		position: absolute;
+		top: 0; right: 0; bottom: 0; left: 0;
+		transition: all 0.75s ease-in-out;
+		width: 100%;
+	}
+}
+.item-date {
+	color: white;
+	@include font-size(1);
+}
+.item-title {
+	color: white;
+	font-weight: 400;
+	line-height: 1;
+	margin: 0;
+	padding: 0;
+	word-wrap: break-word;
+	@include font-size(3.5);
+}
+.item-subtitle {
+	color: white;
+	word-wrap: break-word;
+	@include font-size(1.5);
+}
+.item:hover {
+	&::after {
+		background: rgba($dark-gray, 0.6);
+		transition: all 0.75s ease-in-out;
+	}
+}
+.item:hover .item-content {
+	opacity: 1;
+}
+.item-content {
+	opacity: 1;
+	padding: 20px 30px;
+	position: absolute;
+	top: 50%; left: 0;
+	transform: translateY(-50%);
+	transition: all 0.55s ease-in-out;
+	width: 100%;
+	z-index: 500;
+}
+.item:hover .item-content-subtitle {
+	transition: all 0.55s ease-in-out;
+}
+
+/* entry footer */
+
+.edit-link {
+	@include font-size(1.5);
+	a {
+		color: white;
+	}
+}
+
+/* catgories / tags */
+
+.tags-links {
+	padding: 10px 0 0;
+}
+.cat-links,
+.tags-links {
+	letter-spacing: 0.05em;
+	@include font-size(1.5);
+	a {
+		@include font-size(1.5);
+	}
+}
+.share-links {
+	padding: 15px 0 0;
+}
+.share {
+	fill: $light-gray;
+	height: 35px;
+	padding: 3px;
+	width: 35px;
+	&:hover {
+		fill: $dark-gray;
+	}
+}
+
+/* pagination */
+
+.page-links {
+	margin: 30px 0;
+	text-align: center;
+	@include font-size(1.5);
+}
+.pagination {
+	margin: 0 auto;
+	padding: 40px 20px;
+	text-align: center;
+	&::after {
+		@include clearfix;
+	}
+}
+.page-numbers {
+	border: 1px solid $smoke;
+	border-radius: 30px;
+	color: $dark-gray;
+	display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 10px;
+    text-align: center;
+    transition: all 0.15s ease-in-out;
+    width: 30px;
+    @include font-size(1.2);
+    &:hover {
+    	background: $smoke;
+    	color: white;
+    }
+}
+.page-numbers:last-child {
+	margin-right: 0;
+}
+.current {
+	background: $smoke;
+	color: white;
+	font-weight: bold;
+}
+.next {
+	border: none;
+}
+.nav-previous,
+.nav-next {
+	display: block;
+	font-weight: 900;
+	margin: 50px auto 0;
+	@include font-size(2);
+	a {
+		color: $smoke;
+		display: block;
+		text-align: center;
+		text-transform: uppercase;
+		&:hover {
+			color: $dark-gray;
+		}
+	}
+}

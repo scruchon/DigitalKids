@@ -1,0 +1,49 @@
+
+/* Header
+----------------------------------------------- */
+
+.header-no-img {
+	background: $dark-gray;
+	padding: 4% 0;
+}
+.header-top {
+	background: none;
+	position: absolute;
+}
+.logo {
+	position: absolute;
+	top: 50%;
+	left: 60px;
+	height: auto;
+	transform: translateY(-50%);
+}
+.site-title {
+	@include font-size(4.2);
+}
+.featured-content {
+	margin-left: -500px;
+	max-width: 1000px;
+}
+.featured-title {
+	@include font-size(7.5);
+}
+.featured-subtitle {
+	@include font-size(3);
+}
+.featured-date {
+	@include font-size(2);
+	&::before {
+		top: 15px; right: 0;
+		width: 420px;
+	}
+	&::after {
+		top: 15px; right: 0;
+		width: 420px;
+	}
+}
+
+/* Menu Icon */
+
+.menu-icon-container {
+	top: 50%; right: 60px;
+} 

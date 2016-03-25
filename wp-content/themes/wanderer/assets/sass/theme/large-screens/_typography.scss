@@ -1,0 +1,76 @@
+
+/* Typography
+----------------------------------------------- */
+
+h1 {
+	@include font-size(6);	
+}
+h2 {
+	@include font-size(3);
+}
+h3 {
+	@include font-size(3.5);
+}
+h4 {
+	@include font-size(2.5);
+}
+h5 {
+	@include font-size(3);
+}
+h6 {
+	@include font-size(1.8);
+}
+
+/* Paragraphs */
+
+p {
+	@include font-size(1.7);
+}
+
+/* Unorder and Ordered Lists */
+
+ul {
+	li {
+		@include font-size(1.8);
+	}
+}
+ol {
+	li {
+		@include font-size(1.7);
+	}
+}
+
+/* Blockquotes */
+
+blockquote {
+	p {
+		@include font-size(3.5);
+	}
+}
+cite {
+	@include font-size(2);
+}
+
+/* Tables */
+
+table {
+	@include font-size(1.7);
+}
+
+/* Defintion Lists */
+
+dl {
+	@include font-size(1.7);
+}
+
+/* Address */
+
+address {
+	@include font-size(1.7);
+}
+
+/* Pre */
+
+pre {
+	@include font-size(1.7);
+}

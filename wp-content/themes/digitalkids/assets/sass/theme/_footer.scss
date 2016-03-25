@@ -1,0 +1,19 @@
+
+/* Footer
+----------------------------------------------- */
+
+footer {
+	padding: 50px 20px;
+	text-align: center;
+}
+.copyright {
+	position: relative;
+	&::before {
+		border: 3px solid #c5c6c7;
+		content: "";
+		margin-left: -75px;
+		position: absolute;
+		top: -30px; left: 50%;
+		width: 150px;
+	}
+}

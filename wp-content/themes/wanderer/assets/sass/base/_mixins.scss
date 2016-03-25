@@ -1,0 +1,15 @@
+// Theme Mixins //
+
+// Clearfix Mixin
+
+@mixin clearfix {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+// Font Size
+
+@mixin font-size($sizeValue: 1.6) {
+  font-size: $sizeValue + rem;
+}

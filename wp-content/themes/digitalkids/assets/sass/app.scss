@@ -1,0 +1,50 @@
+/**
+ Theme Name: Wanderer
+ Theme URI: http://www.press75.com/
+ Description: A blogging theme.
+ Version: 1.2
+ Author: Press75
+ Author URI: http://www.press75.com/
+ License: GNU General Public License v2 or later
+ License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ Tags: dark, gray, white, responsive-layout, fluid-layout, featured-images, theme-options, custom-colors
+ Text Domain: wanderer
+*/
+
+@import "base/mixins";
+@import "variables";
+@import "base/reset";
+@import "base/grid";
+@import "base/base";
+@import "theme/global";
+@import "theme/typography";
+@import "theme/icons";
+@import "theme/header";
+@import "theme/sidebar";
+@import "theme/blog";
+@import "theme/comments";
+@import "theme/owl-theme";
+@import "theme/owl-carousel";
+@import "theme/shortcode";
+@import "theme/footer";
+@import "theme/ie";
+
+@media (min-width: 700px) { 
+	@import "theme/tablet/global";
+	@import "theme/tablet/grid";
+	@import "theme/tablet/typography";
+	@import "theme/tablet/header";
+	@import "theme/tablet/sidebar";
+	@import "theme/tablet/blog";
+	@import "theme/tablet/comments";
+	@import "theme/tablet/owl-theme";
+	@import "theme/tablet/footer";
+}
+@media (min-width: 1142px) {
+	@import "theme/large-screens/global";
+	@import "theme/large-screens/typography";
+	@import "theme/large-screens/header";
+	@import "theme/large-screens/sidebar";
+	@import "theme/large-screens/blog";
+	@import "theme/large-screens/comments";
+}

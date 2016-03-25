@@ -1,0 +1,173 @@
+
+/* Aside Slide
+----------------------------------------------- */
+
+/* gets rid of the browser-created checkbox */
+
+#toggle {
+	position: absolute;
+	left: -4000px;
+}
+
+/* style the page-wrap position */
+
+.page-wrap {
+	height: auto;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	min-width: 300px;
+
+	&::after {
+	  @include clearfix;
+	}
+}
+.page-wrap-inner {
+	float: left;
+	width: 100%;
+	margin-left: 0;
+	transition: all 0.55s ease-in-out 0s;
+
+	&::after {
+		@include clearfix;
+	}
+}
+
+/* When the menu is clicked / checkbox checked */
+
+:checked ~ .page-wrap .page-wrap-inner {
+	margin-left: -75%;
+	position: fixed;
+	transition: 0 0.55s ease-in-out 0s;
+}
+
+/* styles the aside position */
+
+.aside-container {
+	background: $coal;
+	height: 100%;
+	overflow: auto;
+	right: -75%;
+	padding: 20px 0 60px;
+	position: fixed;
+	width: 75%;
+	transition: right 0.55s ease-in-out 0s;
+}
+:checked ~ .aside-container {
+	right: 0;
+	transition: 0 0.55s ease-in-out 0s;
+}
+
+/* profile image */
+
+.profile-img {
+	height: 120px;
+	margin: 20px auto;
+	width: 120px;
+	img {
+		border-radius: 50%;
+	}
+}
+
+/* profile name */
+
+.profile-name {
+	margin: 20px 0;
+	width: 100%;
+}
+.name {
+	color: $gray;
+	display: block;
+	font-weight: 400;
+	letter-spacing: 0.15em;
+	text-align: center;
+	@include font-size(1.8);
+}
+
+/* social */
+
+.profile-social {
+	margin: 20px 0 40px;
+	text-align: center;
+}
+
+/* widgets */
+
+.widget {
+	border-bottom: 1px solid $dark-gray;
+	padding: 20px 30px;
+	ul {
+		margin: 5px 0;
+		padding: 0;
+		li {
+			color: white;
+			font-weight: 300;
+			letter-spacing: 0.1em;
+			line-height: 1.5;
+			list-style: none;
+			margin: 6px 0;
+			text-align: center;
+			text-transform: uppercase;
+			word-wrap: break-word;
+			@include font-size(1.2);
+		}
+		a {
+			color: white;
+			transition: all 0.55s ease-in-out 0s;
+			&:hover {
+				color: $teal;
+			}
+		}
+	}
+}
+.comment-author-link {
+	color: white;
+}
+.widget:last-of-type {
+	border: none;
+}
+.widget-title {
+	color: white;
+	font-weight: 400;
+	letter-spacing: 0.1em;
+	margin: 5px 0 15px;
+	text-align: center;
+	text-transform: uppercase;
+	@include font-size(1.5);
+}
+
+/* search */
+
+form > div {
+	position: relative;
+}
+.widget_search {
+	background: $dark-gray;
+	margin-bottom: 20px;
+	padding: 10px 30px;
+}
+.search-input {
+	background: $dark-gray;
+	border: none;
+	color: white;
+	font-family: 'Playfair Display', serif;
+	font-style: italic;
+	letter-spacing: 0.1em;
+	margin: 0 auto;
+	outline: none;
+	padding: 8px 5px;
+	width: 100%;
+	@include font-size(1.6);
+}
+
+::-webkit-input-placeholder {
+   color: white;
+}
+::-moz-placeholder {
+   color: white;  
+}
+:-ms-input-placeholder {  
+   color: white;  
+}
+

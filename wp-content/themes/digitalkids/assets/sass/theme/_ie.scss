@@ -1,0 +1,35 @@
+
+/* IE Styles
+----------------------------------------------- */
+
+.ie9 {
+	.entry-title-animate {
+		margin: 0;
+		opacity: 1;
+	}
+	.form-control:focus + label {
+		left: 10px;
+		@include font-size(1.7);
+	}
+	:checked ~ .page-wrap .page-wrap-inner {
+		margin-left: -70%;
+		position: fixed;
+		transition: 0 0.55s ease-in-out 0s;
+	}
+}
+
+@media (min-width: 700px) {
+	.ie9 {
+		:checked ~ .page-wrap .page-wrap-inner {
+			margin-left: -47%;
+		}
+	}
+}
+
+@media (min-width: 1142px) {
+	.ie9 {
+		:checked ~ .page-wrap .page-wrap-inner {
+			margin-left: -23%;
+		}
+	}
+}

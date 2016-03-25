@@ -1,0 +1,8 @@
+# Include your project-specific ignores in this file
+node_modules
+assets/vendor/*
+assets/js/*scripts*.js
+assets/js/vendor/modernizr.min.js
+assets/manifest.json
+style.css.map
+.sass-cache
