@@ -30,6 +30,7 @@
 					<?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
 
 						<div class="item" <?php echo ( $url ? 'style="background-image: url(' . $url . ');"' : null ); ?>>
+							<div class="overlay"></div>
 							
 				            <a href="<?php the_permalink(); ?>">
 				                <div class="item-content">
