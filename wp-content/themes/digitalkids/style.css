@@ -1000,20 +1000,25 @@ input[type="submit"].search-btn {
   position: fixed;
   left: 5%;
   top: 5%;
-  color: #222;
+  color: #fff;
   text-transform: uppercase;
-  padding: 10px 15px;
+  padding: 10px 12px 10px 20px;
   z-index: 999;
-  border:1px solid #999;
-  opacity: 0;
-  transition: opacity 0.75s ease-in-out;
+  border:1px solid #fff;
+  transition: color 0.5s ease-in-out,  border 0.5s ease-in-out;
   font-size: 12px;
   cursor: pointer;
+  background: url(assets/images/arrow-left.svg) no-repeat center left;
+  background-size: 12px 12px;
 }
-#backhome.homeshow{
+#backhome.homedark{
   opacity: 0.8;
+  border:1px solid #999;
+  color: #222;
+  background: url(assets/images/arrow-left-black.svg) no-repeat center left;
+  background-size: 12px 12px;
 }
-#backhome.homeshow:hover{
+#backhome.homedark:hover{
   opacity: 1;
    transition: opacity 0.3s ease-in-out;
    color: #000;
@@ -1045,7 +1050,10 @@ input[type="submit"].search-btn {
   color: #222;
   margin: -30px 0;
 }
-
+.knowmore{
+  color: #000;
+  text-decoration: underline;
+}
 .logo-dk, .sidebarlogo a{
   height: 160px;
   width: 160px;
@@ -1121,7 +1129,6 @@ input[type="submit"].search-btn {
   -webkit-transform-style: preserve 3d;
   transform-style: preserve 3d;
   width: 100%;
-  margin-top: -200px;
 }
 .featured::after {
   background: black;
@@ -2463,6 +2470,13 @@ footer {
 
   /* Sidebar
   ----------------------------------------------- */
+  .contact-me{
+    margin-top: 20px;
+    transition: all 0.3s ease-in-out;
+  }
+  .contact-me:hover{
+    transform: scale(0.95,0.95);
+  }
   :checked ~ .page-wrap .page-wrap-inner {
     margin-left: -50%;
   }
@@ -2992,7 +3006,7 @@ footer {
 /* big smartphones */
 @media (min-width: 1400px) {
  .featured{
-    height: 1022px;
+    height: 858px;
     overflow: hidden;
     padding-bottom: 0;
   }

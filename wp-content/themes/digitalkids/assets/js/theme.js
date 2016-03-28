@@ -37,13 +37,13 @@ var wandererApp = (function() {
 					}
 				}
 
-				if (scrollTop > 1000) {
+				if (scrollTop > 800) {
 					if (backhome.classList) {
-						backhome.classList.add('homeshow');
+						backhome.classList.add('homedark');
 					} 
 				} else {
 					if (backhome.classList) {
-						backhome.classList.remove('homeshow');
+						backhome.classList.remove('homedark');
 					}
 				}
 
