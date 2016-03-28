@@ -17,9 +17,7 @@
 
 	<div class="aside-container">
 		<div class="profile">
-			<div class="profile-img">
-				<img src="<?php bloginfo('template_directory');?>/assets/images/egle-cruchon-digital-kids.jpg" alt="Eglé Cruchon - early childood specialist - Digital Kids" />
-			</div>
+			
 			<div class="profile-name">
 				<h6 class="name"><?php echo $first_name . ' ' . $last_name; ?></h6>
 			</div>
