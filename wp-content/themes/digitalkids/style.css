@@ -2190,6 +2190,9 @@ form > div {
 footer {
   padding: 50px 20px;
   text-align: center;
+  background: #333;
+  color: #ddd;
+  margin-top: -10px;
 }
 
 .copyright {
@@ -2199,15 +2202,20 @@ footer {
 .copyright p{
   text-align: center;
   font-size: 1.5rem;
+  color: #ddd;
 }
 .copyright::before {
-  border: 3px solid #c5c6c7;
+  border: 2px solid #222;
   content: "";
   margin-left: -75px;
   position: absolute;
-  top: -30px;
+  bottom: -10px;
   left: 50%;
   width: 150px;
+}
+.copyright p a{
+  color: #ddd;
+  text-decoration: underline;
 }
 
 /* IE Styles
@@ -2617,7 +2625,7 @@ footer {
   /* Footer
   ----------------------------------------------- */
   footer {
-    padding: 50px;
+    padding: 20px;
   }
 }
 @media (min-width: 1142px) {

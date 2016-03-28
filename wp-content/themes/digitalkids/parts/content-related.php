@@ -50,5 +50,3 @@
 		</div><!-- end span 12 of 12 -->
 	</div><!-- end section group -->
 </div><!-- end more posts -->
-
-
