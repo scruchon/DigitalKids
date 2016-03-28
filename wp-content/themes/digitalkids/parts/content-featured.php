@@ -26,6 +26,8 @@
 		<?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
 
 			<div class="featured" <?php echo ( $url ? 'style="background-image: url(' . $url . ');"' : null ); ?>>
+			
+
 				<div id="featured" class="featured-content">
 					<span class="featured-date"><?php echo get_the_date("n / d / y"); ?></span>
 					<h1 class="featured-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>

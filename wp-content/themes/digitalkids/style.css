@@ -1008,10 +1008,12 @@ input[type="submit"].search-btn {
 }
 .sidebar-title{
   text-transform: uppercase;
-  font-size: 26px;
+  font-size: 20px;
+  letter-spacing: 0.1em;
   text-align: center;
+  padding: 0;
   color: #222;
-  margin: 0 0;
+  margin: -20px 0;
 }
 
 .logo-dk, .sidebarlogo a{
@@ -1064,9 +1066,15 @@ input[type="submit"].search-btn {
 
 .featured {
   background: no-repeat;
-  z-index: 0;
   background-position: center center;
-  padding-bottom: 55%;
+    background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 1;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-bottom: 66%;
   position: relative;
   -webkit-transform-style: preserve 3d;
   transform-style: preserve 3d;
@@ -1084,14 +1092,19 @@ input[type="submit"].search-btn {
   left: 0;
   width: 100%;
 }
-
+.featured .overlay{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(0,0,0,0.2);
+}
 .featured-content {
   height: auto;
   margin-left: -140px;
   opacity: 1;
   position: absolute;
   text-align: center;
-  top: 52%;
+  top: 57%;
   left: 50%;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
