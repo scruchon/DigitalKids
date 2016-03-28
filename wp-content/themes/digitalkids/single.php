@@ -10,7 +10,7 @@ get_header(); ?>
 <?php if ( has_post_thumbnail() ) {
 
 	$url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
-
+	<a id="backhome" href="/">Return home</a>
 	<div class="featured" <?php echo ( $url ? 'style="background-image: url(' . $url . ');"' : null ); ?>>
 			<div class="overlay"></div>
 		<div id="featured" class="featured-content">

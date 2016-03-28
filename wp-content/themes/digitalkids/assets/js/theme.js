@@ -11,6 +11,7 @@ var wandererApp = (function() {
 		scrollAnimations: function() {
 
 			var arrow = document.createElement('div');
+			var backhome = document.getElementById('backhome');
 			var featuredContent = document.getElementById('featured');
 			var entryTitle = document.getElementById('title');
 
@@ -33,6 +34,16 @@ var wandererApp = (function() {
 					if (arrow.classList || sliderContent.classList || featuredContent.classList) {
 						arrow.classList.remove('js-arrow-show');
 						featuredContent.classList.remove('js-featured-content');
+					}
+				}
+
+				if (scrollTop > 1000) {
+					if (backhome.classList) {
+						backhome.classList.add('homeshow');
+					} 
+				} else {
+					if (backhome.classList) {
+						backhome.classList.remove('homeshow');
 					}
 				}
 

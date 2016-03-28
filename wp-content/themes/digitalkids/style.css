@@ -936,7 +936,6 @@ input[type="submit"].btn-primary {
   padding: 12px 8px;
   text-align: center;
   width: 100%;
-  max-width: 400px;
   margin: auto;
 }
 input[type="submit"].search-btn {
@@ -995,9 +994,34 @@ input[type="submit"].search-btn {
 .share:hover {
   fill: #333333;
 }
+/* Back home
+----------------------------------------------- */
+#backhome{
+  position: fixed;
+  left: 5%;
+  top: 5%;
+  color: #222;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  z-index: 999;
+  border:1px solid #999;
+  opacity: 0;
+  transition: opacity 0.75s ease-in-out;
+  font-size: 12px;
+  cursor: pointer;
+}
+#backhome.homeshow{
+  opacity: 0.8;
+}
+#backhome.homeshow:hover{
+  opacity: 1;
+   transition: opacity 0.3s ease-in-out;
+   color: #000;
+}
 
 /* Header
 ----------------------------------------------- */
+
 .header{
   background: transparent;
 }
@@ -1014,7 +1038,7 @@ input[type="submit"].search-btn {
 }
 .sidebar-title{
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 18px;
   letter-spacing: 0.1em;
   text-align: center;
   padding: 0;
@@ -1038,6 +1062,12 @@ input[type="submit"].search-btn {
     transform: rotate(360deg) scale(0.8,0.8);
     transition: all 0.3s ease-in-out 0s;
 }
+.logo-dk a{
+    cursor: pointer;
+    display: block;
+    height: 160px;
+    width: 160px;
+}
 
 .sidebarlogo a{
    height: 140px;
@@ -1049,6 +1079,7 @@ input[type="submit"].search-btn {
   position: relative;
   display: block;
    transition: all 0.3s ease-in-out 0s;
+
 }
 .sidebarlogo a:hover{
  opacity:0.8;
@@ -1406,6 +1437,9 @@ h4.widget-title{
 /* search */
 form > div {
   position: relative;
+}
+#search-2{
+  margin-top: 30px;
 }
 
 .widget_search {
@@ -2645,9 +2679,7 @@ footer {
     padding: 0;
   }
 
-  .header-top {
-   display: none; /* hidden in when sidebar */
-  }
+ 
 
   .logo {
     position: absolute;
@@ -2867,7 +2899,29 @@ footer {
   }
 }
 
+/* Sidebar ON */
+
+@media (min-width: 1400px) {
+  #backhome{
+    display: block;
+  }
+  .header-top {
+   display: none; 
+  }
+}
+
+/* Sidebar OFF */
+
 @media (max-width: 1400px) {
+#backhome{
+    display: none;
+  }
+.sidebarlogo, .sidebar-title{
+  display: none;
+}
+.header-top {
+   display: block; 
+}
  .featured{
     margin-top: 0;
   }
@@ -2881,3 +2935,6 @@ footer {
   width: 100%;
   }
 }
+
+ 
+
