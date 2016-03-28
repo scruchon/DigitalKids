@@ -7,7 +7,7 @@
 ?>
 
 <div class="more-posts">
-	<p class="more-posts-title"><?php printf( __( 'More Blog Posts', 'wanderer' ) ); ?></p>
+	<p class="more-posts-title">Other Great Articles</p>
 	<div class="section group">
 		<div class="span_12_of_12">
 			<div id="owl" class="owl-carousel">

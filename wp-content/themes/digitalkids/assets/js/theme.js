@@ -47,15 +47,6 @@ var wandererApp = (function() {
 					}
 				}
 
-				if (scrollTop > 300) {
-					if (entryTitle.classList) {
-						entryTitle.classList.add('js-entry-title');
-					} 
-				} else {
-					if (entryTitle.classList) {
-						entryTitle.classList.remove('js-entry-title');
-					}
-				}
 			};
 		},
 
