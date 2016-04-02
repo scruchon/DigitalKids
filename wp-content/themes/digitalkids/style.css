@@ -3006,7 +3006,7 @@ footer {
   }
   .featured-title {
   margin: 0 0 10px 0;
-  font-size: 4.6rem;
+  font-size: 4.2rem;
   }
   .entry-content {
   padding: 10px 40px;
@@ -3060,12 +3060,18 @@ footer {
 
 /* big smartphones */
 @media (max-width: 767px) {
+ .logo-dk a{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
   .featured{
     height: 580px;
   }
   .entry-content, 
-  .entry-content p{
+  .entry-content p,
+  .entry-content ul li{
     text-align: left;
+    font-size: 1.8rem;
   }
   .copyright p{
     font-size:1.3rem;
@@ -3082,6 +3088,10 @@ footer {
    .main-content{
     padding-bottom: 20px;
   }
+    .featured-title {
+  font-size: 3.6rem;
+  max-width: 90%;
+  }
 }
 /* very small smartphones */
 @media (max-width: 321px) {
@@ -3096,4 +3106,19 @@ footer {
   .main-content{
     padding-bottom: 0px;
   }
+}
+
+/* Cas special sidebar auteur pour tablettes */
+@media screen and (min-width: 700px) and (max-width: 1399px) {
+.column{
+  width: 45%;
+  float: left;
+ }
+ .contact-me{
+  margin-top: -7px;
+  margin-left: 15%;
+ }
+ #text-5.widget{
+  padding-top: 0;
+ }
 }
