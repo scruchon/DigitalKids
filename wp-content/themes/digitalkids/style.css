@@ -1546,7 +1546,6 @@ form > div {
   position: relative;
   top: 0;
   left: 0;
-  width: 100%;
   word-wrap: break-word;
   z-index: 200;
 }
@@ -1555,12 +1554,18 @@ form > div {
   display: table;
   clear: both;
 }
+.entry-content p a:hover{
+  text-decoration: underline;
+  }
 .entry-content img {
   width: 100%;
   max-width: 100%;
 }
 .page .entry-content{
   margin-top: 4em;
+}
+.page .featured-date{
+  display: none;
 }
 
 .entry-index {
@@ -2518,7 +2523,9 @@ footer {
   }
 
   .entry-title-index {
-    font-size: 5.5rem;
+    font-size: 4rem;
+    max-width: 80%;
+    margin: auto;
   }
 
   .entry-subtitle {
@@ -2999,7 +3006,7 @@ footer {
   }
   .featured-title {
   margin: 0 0 10px 0;
-  font-size: 3.6rem;
+  font-size: 4.6rem;
   }
   .entry-content {
   padding: 10px 40px;
@@ -3020,6 +3027,34 @@ footer {
   .owl-item:hover .overlay{
   background: rgba(0,0,0,0.8);
   }
+
+    .entry-title-index {
+    font-size: 5.5rem;
+  }
+
+  .logo-dk{
+  height: 160px;
+  width: 160px;
+  background-size: 160px 144px;
+}
+
+.logo-dk a{
+    height: 160px;
+    width: 160px;
+}
+
+}
+@media (max-width: 1025px) {
+  .logo-dk{
+  height: 120px;
+  width: 120px;
+  background-size: 120px 108px;
+}
+}
+
+.logo-dk a{
+    height: 160px;
+    width: 160px;
 }
 
 
@@ -3027,6 +3062,10 @@ footer {
 @media (max-width: 767px) {
   .featured{
     height: 580px;
+  }
+  .entry-content, 
+  .entry-content p{
+    text-align: left;
   }
   .copyright p{
     font-size:1.3rem;
