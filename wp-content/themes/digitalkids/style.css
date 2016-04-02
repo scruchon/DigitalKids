@@ -1559,6 +1559,9 @@ form > div {
   width: 100%;
   max-width: 100%;
 }
+.page .entry-content{
+  margin-top: 4em;
+}
 
 .entry-index {
   background: fixed;
