@@ -2524,7 +2524,7 @@ footer {
 
   .entry-title-index {
     font-size: 4rem;
-    max-width: 80%;
+    max-width: 70%;
     margin: auto;
   }
 
@@ -3070,7 +3070,6 @@ footer {
   .entry-content, 
   .entry-content p,
   .entry-content ul li{
-    text-align: left;
     font-size: 1.8rem;
   }
   .copyright p{
@@ -3110,6 +3109,13 @@ footer {
 
 /* Cas special sidebar auteur pour tablettes */
 @media screen and (min-width: 700px) and (max-width: 1399px) {
+.featured{
+  height: 760px;
+
+  }
+.widget#text-3, .widget#text-4{
+    display: none;
+  }
 .column{
   width: 45%;
   float: left;

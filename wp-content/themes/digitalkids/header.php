@@ -56,6 +56,7 @@
   ga('send', 'pageview');
 
 </script>
+<meta property="og:image" content="http://digital-kids.ch/wp-content/uploads/2016/03/Digital-kids-ebooksvsbooks.jpeg" />
 </head>
 
 <body <?php body_class(); ?>>
