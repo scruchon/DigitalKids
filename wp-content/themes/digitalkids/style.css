@@ -1148,16 +1148,14 @@ input[type="submit"].search-btn {
   background: rgba(0,0,0,0.3);
   transition: all 0.5s ease-in-out;
 }
-.owl-item:hover .overlay{
-  background: rgba(0,0,0,0.8);
-}
+
 .featured-content {
   height: auto;
   margin-left: -140px;
   opacity: 1;
   position: absolute;
   text-align: center;
-  top: 57%;
+  top: 54%;
   left: 50%;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
@@ -1440,6 +1438,9 @@ h4.widget-title{
   text-align: center;
   text-transform: uppercase;
   font-size: 1.5rem;
+}
+.widget#text-2{
+  padding-bottom: 2px;
 }
 
 /* search */
@@ -2195,9 +2196,9 @@ form > div {
 /* Footer
 ----------------------------------------------- */
 footer {
-  padding: 50px 20px;
+  padding: 40px 20px;
   text-align: center;
-  background: #333;
+  background: #222;
   color: #ddd;
   margin-top: -10px;
 }
@@ -2212,7 +2213,7 @@ footer {
   color: #ddd;
 }
 .copyright::before {
-  border: 2px solid #222;
+  border: 2px solid #151515;
   content: "";
   margin-left: -75px;
   position: absolute;
@@ -3003,14 +3004,22 @@ footer {
 }
 
 /* Gestion de la cover image */
-/* big smartphones */
+/* big desktop */
 @media (min-width: 1400px) {
  .featured{
-    height: 858px;
+    height: 842px;
     overflow: hidden;
     padding-bottom: 0;
   }
 }
+@media (min-width: 1026px) {
+/* desktop */
+  .owl-item:hover .overlay{
+  background: rgba(0,0,0,0.8);
+  }
+}
+
+
 /* big smartphones */
 @media (max-width: 767px) {
   .featured{

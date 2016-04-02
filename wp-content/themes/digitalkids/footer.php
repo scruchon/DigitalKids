@@ -3,7 +3,7 @@
  * @package Wanderer
  */
 ?>	
-		<div></div>
+<?php get_sidebar(); ?>
 		<footer>
 			<div class="copyright">
 				<p><?php echo get_wanderer_option('footer_text'); ?></p>
@@ -24,7 +24,7 @@
 		</footer><!-- footer -->
 	</div><!-- page-wrap__inner -->	
 </div><!-- page-wrap -->
-<?php get_sidebar(); ?>
+
 <?php wp_footer(); ?>
 
 </body>
